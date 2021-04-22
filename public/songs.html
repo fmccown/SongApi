@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Songs</title>
+<script>
+
+addEventListener("DOMContentLoaded", async function() {
+   /*
+   let response = await fetch("/api/songs");
+   let songs = await response.json();
+
+   let html = "";
+   for (let song of songs) {
+      html += `<li>${song.title} - ${song.artist}</li>`;    
+   }
+
+   document.querySelector("ul").innerHTML = html;
+   */
+
+let response = await fetch("/api/songs/888");
+if (response.ok) {
+   let song = await response.json();
+   console.log(song.title);
+}
+else {
+   console.log("Can't get song");
+}
+
+});
+
+</script>
+<body>
+   <h1>Songs</h1>
+   <ul>
+      <li>Uptown Funk - Bruno Mars</li>
+      <li>Hello - Adele</li>
+      <li>Royals - Lorde</li>
+   </ul>
+</body>
+</html>
