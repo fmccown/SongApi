@@ -1,7 +1,9 @@
 # SongApi
 RESTful web API created with Express and MongoDB
 
-After cloning, run **npm install**. Then run **npm start** to start an Express server. Make sure the MongoDB deamon is running before starting.
+First, ensure the MongoDB deamon is running since the API reads and writes to MongoDB.
+
+After cloning, run **npm install**. Then run **npm start** to start an Express server on port 8000.
 
 The song API supports the following requests:
 
