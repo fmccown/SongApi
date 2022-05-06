@@ -1,5 +1,5 @@
 # SongApi
-RESTful web API created with Express and MongoDB
+RESTful web API created with Express and MongoDB. This API is from the [Web Programming zyBook](https://www.zybooks.com/catalog/web-programming/).
 
 First, ensure the MongoDB deamon is running since the API reads and writes to MongoDB.
 
